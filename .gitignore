@@ -5,6 +5,9 @@ www/sites/*/settings*.php
 www/sites/*/files
 www/sites/*/private
 
+# Linux compatibility with some disks
+www/D:/
+
 # Ignore custom configuration
 www/sites/default/settings.php
 
