@@ -177,7 +177,24 @@
  *   );
  * @endcode
  */
-$databases = array();
+/*
+* Veuillez renseigner les informations de votre base de donnée
+*/
+$databases = array(
+  'default' => 
+  array (
+    'default' => 
+    array (
+      'database' => 'psb_v2',
+      'username' => 'root',
+      'password' => '',
+      'host' => 'localhost',
+      'port' => '',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
 
 /**
  * Access control for update.php script.
@@ -209,7 +226,7 @@ $update_free_access = FALSE;
  *   $drupal_hash_salt = file_get_contents('/home/example/salt.txt');
  *
  */
-$drupal_hash_salt = '';
+$drupal_hash_salt = 'nvcLDnxhdDfMBIsNw7kfM0TAt0y9B9Glh_kU_MXdCb4';
 
 /**
  * Base URL (optional).
