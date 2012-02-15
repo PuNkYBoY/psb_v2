@@ -2,13 +2,28 @@
 body {
 	background-image:url('../images/bg.png');
 	background-position: top;
-	background-repeat:repeat-y;
-	font-family: 'LaneB', Arial, sans-serif;
+	/*background-repeat:repeat-y;*/
+	font-family:Ubuntu, Arial, sans-serif;
+	/*height: 4000px;*/
 }
 #page-wra { width:1000px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; top:0; bottom:0; }
 #header { background:none; }
 #in_page { background-image:url('../images/in_page.png'); }
-#sous_menu { background-image:url('../images/sous_menu.png'); width: 1000px; height:29px; }
+#sous_menu {
+	background-image:url('../images/sous_menu.png');
+	width: 1000px;
+	height:29px;
+}
+#main-menu, #sous_menu, #main .section h1{
+	font-family: 'LaneB', Arial, sans-serif;
+}
+#main-menu-links a, #secondary-menu-links a{
+	color: #fff;
+}
+#main-menu-links a:hover, #secondary-menu-links a:hover{
+	color: #acf;
+}
+
 .navigation { padding-top:5px; }
 #footer-wrapper { background-image:url('../images/footer.png'); height:112px; }
 #in_in { padding:10px; }
@@ -29,7 +44,6 @@ body {
   margin: 0 0px;
 }
 #main-menu-links a {
-  color: white;
   background: #0284c4;
   float: left; /* LTR */
   height: 2.4em;
@@ -37,13 +51,12 @@ body {
   padding: 0 0.8em;
   
   text-decoration: none;
-  text-shadow: 0 1px black;
+  text-shadow: 1px 1px 1px #000;
 
 }
 #main-menu-links a:hover,
 #main-menu-links a:focus {
-
-
+	text-shadow: 1px 1px 1px #000;
 }
 #main-menu-links a:active {
   background: #b3b3b3;
@@ -59,3 +72,61 @@ body {
 }
 
 
+#secondary-menu-links a {
+	text-shadow: 1px 1px 4px #000, -1px -1px 4px rgba(255,255,255,0.5);
+	text-decoration: none;
+}
+#secondary-menu-links a:focus,
+#secondary-menu-links a:hover {
+	text-shadow: 1px 1px 4px #333, -1px -1px 4px rgba(255,255,255,0.5);
+	text-decoration: none;
+}
+
+#secondary-menu-links a:active {
+	color:#8ad;
+	text-shadow: -1px -1px 4px #333, 1px 1px 4px rgba(255,255,255,0.5);
+}
+
+#main .section{
+	background: #eaeaea;
+	padding: 5px;
+	margin: 10px;
+}
+
+#main .section h1{
+	text-shadow: 1px 1px 4px #000, -1px -1px 4px rgba(255,255,255,0.5);
+	margin: -5px -5px 0px -5px;
+	font-size: 36px;
+	padding: 2px 5px;
+	text-align: center;
+	color: #fff;
+	font-weight: normal;
+	
+	background: -webkit-gradient(
+		linear,
+		left top,
+		left bottom,
+		from(#006aea),to(#00669a)
+	);
+	background: -webkit-linear-gradient(
+		top,
+		#006aea,
+		#00669a
+	);
+	background: -moz-linear-gradient(
+		top,
+		#006aea,
+		#00669a
+	);
+	background: -o-linear-gradient(
+		top,
+		#006aea,
+		#00669a
+	);
+	background: linear-gradient(
+		top,
+		#006aea,
+		#00669a
+	);
+	
+}
