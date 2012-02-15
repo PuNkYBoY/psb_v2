@@ -1,5 +1,10 @@
-	 @font-face { font-family:LaneB; src:local(LaneB), url(../LANE_B.TTF) format(TrueType); }
-body { background-image:url('../images/bg.png'); background-position: top; background-repeat:repeat-y; }
+@import "polices.css";
+body {
+	background-image:url('../images/bg.png');
+	background-position: top;
+	background-repeat:repeat-y;
+	font-family: 'LaneB', Arial, sans-serif;
+}
 #page-wra { width:1000px; margin-left:auto; margin-right:auto; margin-top:0px; margin-bottom:0px; top:0; bottom:0; }
 #header { background:none; }
 #in_page { background-image:url('../images/in_page.png'); }
