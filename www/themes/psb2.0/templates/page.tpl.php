@@ -91,7 +91,7 @@
     <?php if ($logo): ?>
     <center>
       <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo">
-        <img src="themes/psb2.0/images/logo.png" width="900" alt="<?php print t('Home'); ?>" />
+        <img src="<?php print $logo; ?>" width="900" alt="<?php print t('Home'); ?>" />
       </a>
     </center>
     <?php endif; ?>
